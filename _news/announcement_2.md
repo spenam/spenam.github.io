@@ -1,33 +1,30 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: We made it to the Nature cover !
+date: 2025-02-12 16:11:00-0400
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+We published our paper **"Observation of an ultra-high-energy cosmic neutrino with KM3NeT"** which made the front cover of the *Nature* journal !.
+![Nature cover — Cosmic Catcher](assets/img/nature_cover.jpg)
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+## A landmark discovery in neutrino astronomy — Featured on the cover of *Nature*
 
-#### Hipster list
+I am proud to have contributed to the international KM3NeT Collaboration behind the discovery of an extraordinary cosmic neutrino, reported in our paper **“Observation of an ultra-high-energy cosmic neutrino with KM3NeT,”** published in *Nature* in February 2025.
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+This work reports the observation of an exceptionally energetic cosmic neutrino, associated with an event designated KM3-230213A. With an estimated energy far exceeding that of previously observed neutrinos, this remarkable event opens a new window onto the most extreme astrophysical phenomena in the Universe. It raises exciting questions about the origins of ultra-high-energy cosmic rays and the powerful cosmic accelerators capable of producing such particles.
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+The discovery was made using **KM3NeT**, a large underwater neutrino telescope in the Mediterranean Sea. It demonstrates the extraordinary potential of detecting neutrinos through the faint Cherenkov light produced by secondary charged particles travelling through seawater, allowing us to explore some of the most energetic and distant processes in the cosmos.
 
----
+A particularly special recognition of this work was its selection for the **front cover of *Nature* (13 February 2025)**, featuring the KM3NeT detector under the headline *“Cosmic Catcher”*. Seeing this collaborative scientific achievement highlighted on the cover of one of the world's leading scientific journals was a truly rewarding moment.
 
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
+I am delighted to have been part of this international effort, bringing together scientists and engineers from across the world to push the boundaries of neutrino astronomy and our understanding of the Universe. My contributions to the paper where the statistical analyses for significance of background vs signal.
 
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
+**Publication:**
 
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+The KM3NeT Collaboration, *Observation of an ultra-high-energy cosmic neutrino with KM3NeT*, Nature **638**, 376–382 (2025).
+
+[Read the paper in Nature](https://doi.org/10.1038/s41586-024-08543-1)
