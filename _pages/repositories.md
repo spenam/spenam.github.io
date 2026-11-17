@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
+title: Repositories
 description: This is a non exhaustive list of some interesting repositories I have contributed to.
 nav: true
 nav_order: 4

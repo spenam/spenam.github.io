@@ -2,4 +2,8 @@ github_users:
   - spenam
 
 github_repos:
+  - giogiopg/graphnet
+  - KM3NeT/NuFlux.jl
+  - KM3NeT/KM3OpenOsc.jl
+  - spenam/AdventOfCode2025
   - spenam/wikipedia_network_functions
