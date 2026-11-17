@@ -1,4 +1,3 @@
-```json
 {
   "basics": {
     "name": "Santiago Martinez",
@@ -54,18 +53,14 @@
       "position": "Research Intern, Deep Learning & Data Pipelines",
       "startDate": "2022-03",
       "endDate": "2022-08",
-      "highlights": [
-        "Designed data pipelines for training and inference of Graph Neural Networks using PyTorch and C++."
-      ]
+      "highlights": ["Designed data pipelines for training and inference of Graph Neural Networks using PyTorch and C++."]
     },
     {
       "name": "University of Delaware",
       "position": "Research Intern, Simulation & Computational Modeling",
       "startDate": "2019-06",
       "endDate": "2019-08",
-      "highlights": [
-        "Implemented Monte Carlo simulations in C++ for particle modeling in complex physical media."
-      ]
+      "highlights": ["Implemented Monte Carlo simulations in C++ for particle modeling in complex physical media."]
     }
   ],
   "education": [
@@ -76,4 +71,90 @@
       "endDate": "2025"
     },
     {
-      "institution":
+      "institution": "Aix-Marseille Université",
+      "area": "Physics",
+      "studyType": "M.Sc.",
+      "endDate": "2022",
+      "awards": ["Merit Scholarship"]
+    },
+    {
+      "institution": "Universidad Nacional de Colombia",
+      "area": "Physics",
+      "studyType": "B.Sc.",
+      "endDate": "2020",
+      "awards": ["Top National Exam Score"]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Nature 638, 376–382",
+      "publisher": "Nature",
+      "releaseDate": "2025"
+    },
+    {
+      "name": "JHEP 2024(10), 1–31",
+      "publisher": "Journal of High Energy Physics",
+      "releaseDate": "2024"
+    },
+    {
+      "name": "Entropy 22(9), 1046",
+      "publisher": "Entropy",
+      "releaseDate": "2020"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": ["Python", "Julia", "C++", "SQL", "Bash", "Git", "Linux"]
+    },
+    {
+      "name": "Machine Learning & AI",
+      "keywords": [
+        "Deep Learning",
+        "Graph Neural Networks",
+        "Large Language Models (LLMs)",
+        "Feature Engineering",
+        "Anomaly Detection",
+        "Retrieval-Augmented Generation (RAG)",
+        "Natural Language Processing (NLP)",
+        "Adversarial Training"
+      ]
+    },
+    {
+      "name": "Data Engineering & Infrastructure",
+      "keywords": [
+        "ETL Pipelines",
+        "Distributed Systems",
+        "Large-Scale Data Processing",
+        "Data Pipelines",
+        "GPU Computing",
+        "High-Performance Computing (HPC)",
+        "Data Optimization",
+        "Databricks"
+      ]
+    },
+    {
+      "name": "MLOps & Cloud",
+      "keywords": ["Model Deployment", "MLflow", "Docker", "AWS", "CI/CD", "Ollama", "LangChain"]
+    },
+    {
+      "name": "Libraries & Tools",
+      "keywords": ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "Polars", "Dask", "Snakemake", "Slurm", "Conda", "Transformers"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "KM3OpenOsc.jl",
+      "summary": "Julia open-source package for analysis and data processing."
+    },
+    {
+      "name": "NuFlux.jl",
+      "summary": "Julia open-source package for analysis and data processing."
+    }
+  ],
+  "leadership": [
+    "Early-career representative for the KM3NeT collaboration.",
+    "Organized 8 PhD seminar series at the APC laboratory.",
+    "Speaker at Neutrino 2024 (Milan), ICRC 2023 (Nagoya), and a seminar at King's College London."
+  ]
+}
