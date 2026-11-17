@@ -2,7 +2,7 @@
 layout: post
 title: We made it to the Nature cover !
 date: 2025-02-12 16:11:00-0400
-inline: false
+inline: true
 related_posts: false
 ---
 
