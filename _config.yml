@@ -5,8 +5,8 @@
 #title:   # the website title (if blank, full name will be used instead)
 first_name: Santiago
 middle_name:
-last_name: Peña Martínez
-email: spenam@apc.in2p3.fr
+last_name: Martinez
+email: contact@santiagomartinez.simplelogin.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -75,7 +75,7 @@ linkedin_username: santiago-pena-martinez # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
-whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+whatsapp_number: +33769047032 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0000-0001-8939-0639 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -96,7 +96,7 @@ lastfm_id: # your lastfm id
 spotify_id: # your spotify id
 pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
-instagram_id: santiagop.98 # your instagram id
+instagram_id: # your instagram id
 facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
