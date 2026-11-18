@@ -1,80 +1,140 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
+title: AdventOfCode2025 – Algorithmic Problem Solving with Python
+description: A collection of Python solutions to Advent of Code 2025, emphasizing algorithms, clean code, automated testing, and reusable development tools
+img: assets/img/7.jpg
+importance: 5
 category: fun
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**AdventOfCode2025** is a Python project containing solutions to the programming challenges from [Advent of Code 2025](https://adventofcode.com/2025).
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+I try to solve the puzzles every year, but 2025 was my first time making a repo out of the solutions.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Advent of Code is an annual programming challenge featuring a series of algorithmic puzzles designed to develop problem-solving skills and explore different computational techniques.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The project focuses on developing efficient, readable, and maintainable Python solutions while following good software engineering practices.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Beyond solving individual puzzles, the repository is structured as a reusable software project, incorporating automated input retrieval, modular solution implementations, type hints, and unit testing.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Key Features
 
-{% raw %}
+- **Algorithmic problem solving:** Implement solutions to Advent of Code challenges using efficient algorithms and data structures.
+- **Modular architecture:** Organize individual daily solutions into independent Python modules.
+- **Automated input retrieval:** Download and cache puzzle inputs using a shared input-fetching utility.
+- **Type annotations:** Use Python type hints to improve code readability, maintainability, and static analysis.
+- **Unit testing:** Validate solutions using pytest and the official example inputs.
+- **Reusable templates:** Establish a common structure that can be adapted for future Advent of Code editions.
+- **Dependency management:** Maintain a lightweight Python environment using a requirements file.
+- **Continuous integration:** Use GitHub Actions to automate testing and code-quality checks.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+## Implementation and Methodology
+
+The project is developed in Python and follows a modular structure that separates input management, problem parsing, algorithmic implementations, and testing.
+
+Each Advent of Code challenge is implemented independently, with dedicated functions for parsing the input and solving the two parts of the problem.
+
+A typical solution follows three main steps:
+
+### 1. Input retrieval and parsing
+
+Puzzle inputs are retrieved automatically using a shared input-fetching utility.
+
+The application uses an Advent of Code session cookie stored in an environment variable, avoiding the need to manually download input files.
+
+```python
+from aoc2025.input_fetcher import get_input
+
+# Retrieve the puzzle input
+raw = get_input(year=2025, day=1)
+
+# Parse the input
+def parse_input(text: str):
+    return text.splitlines()
 ```
 
-{% endraw %}
+### 2. Algorithm implementation
+
+Each daily module implements the logic required to solve both parts of the corresponding challenge.
+
+The implementation separates input parsing from the computational logic, making individual functions easier to test and reuse.
+
+```python
+def part1(data):
+    # Implement the solution for part one
+    ...
+
+def part2(data):
+    # Implement the solution for part two
+    ...
+
+if __name__ == "__main__":
+    raw = get_input(year=2025, day=1)
+    data = parse_input(raw)
+
+    print("Part 1:", part1(data))
+    print("Part 2:", part2(data))
+```
+
+### 3. Testing and validation
+
+The project uses pytest to validate the implementations against the official examples provided in the Advent of Code problem descriptions.
+
+Tests cover input parsing and expected outputs, helping detect regressions and ensure the correctness of individual solutions.
+
+```bash
+# Run the complete test suite
+pytest
+
+# Run tests for a specific challenge
+pytest tests/test_day01.py
+```
+
+## Algorithms and Computational Techniques
+
+The Advent of Code challenges provide opportunities to explore a variety of computational approaches.
+
+Depending on the problem, solutions can involve:
+
+- **Graph algorithms:** Represent relationships between elements and explore connected structures.
+- **Graph traversal:** Apply breadth-first search and depth-first search to explore possible paths and configurations.
+- **Dynamic programming:** Break complex problems into smaller subproblems and reuse intermediate results.
+- **Combinatorial algorithms:** Explore possible configurations and optimize search strategies.
+- **Parsing and data processing:** Transform structured textual inputs into computational representations.
+- **Mathematical optimization:** Use mathematical properties to reduce computational complexity.
+- **Efficient data structures:** Select appropriate representations to improve execution time and memory usage.
+
+## Software Engineering Practices
+
+An important objective of the project is to treat algorithmic challenges as a structured software development exercise rather than isolated scripts.
+
+The repository incorporates several software engineering practices:
+
+- Modular and reusable Python code.
+- Separation between input parsing and algorithmic logic.
+- Automated unit testing with pytest.
+- Type annotations and readable interfaces.
+- Input caching and secure handling of authentication credentials.
+- Dependency management and environment isolation.
+- Continuous integration through GitHub Actions.
+
+## Technologies
+
+- **Programming language:** Python
+- **Testing framework:** pytest
+- **Development tools:** Git and GitHub Actions
+- **Input management:** Automated HTTP-based input retrieval and local caching
+- **Code quality:** Type hints and modular software design
+- **Environment management:** Python virtual environments
+
+## Repository and Documentation
+
+The source code, daily solutions, installation instructions, and development documentation are available online:
+
+- [GitHub repository – spenam/AdventOfCode2025](https://github.com/spenam/AdventOfCode2025)
+- [Advent of Code 2025](https://adventofcode.com/2025)
+
+The repository also provides reusable templates and infrastructure for future editions of Advent of Code.
