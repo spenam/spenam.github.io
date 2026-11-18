@@ -5,5 +5,6 @@ github_repos:
   - giogiopg/graphnet
   - KM3NeT/NuFlux.jl
   - KM3NeT/KM3OpenOsc.jl
+  - spenam/diving_club
   - spenam/AdventOfCode2025
   - spenam/wikipedia_network_functions
