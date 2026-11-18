@@ -51,6 +51,7 @@ SQLAlchemy is used for database interaction, while Alembic handles database sche
 PostgreSQL is used as the persistent storage layer.
 
 The database manages:
+
 - Equipment categories and individual equipment records.
 - Club member information.
 - Equipment availability states.
@@ -80,6 +81,7 @@ This provides a stable identification mechanism for future integration with came
 The application is designed for local deployment using Docker Compose.
 
 The deployment includes:
+
 - A FastAPI backend.
 - A PostgreSQL database.
 - An nginx web server and reverse proxy.
