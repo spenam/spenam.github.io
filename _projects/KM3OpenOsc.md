@@ -2,7 +2,7 @@
 layout: page
 title: KM3OpenOsc.jl – KM3NeT Open Data Analysis
 description: A Julia package for processing KM3NeT open data and building detector response histograms for neutrino oscillation analyses
-img: assets/img/KM3NeT_logo.jpg
+img: assets/img/Logo-KM3NeT.png
 importance: 2
 category: work
 related_publications: true
