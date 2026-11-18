@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true
   scrollable: true
-  limit: 5
+  limit: 8
 ---
 
 Hi, my name's Santiago and I'm a Data Scientist / ML Engineer living in Paris . I did a PhD in Deep Learning where I worked with Graph Neural Networks (GNN) to reconstruct events on a particle physics experiment (KM3NeT). My work has been mainly oriented in high performant MLOps for HPC as well as some DevOps for optimization of the pipelines. I also served as the young researchers representative of the experiment as well as the co-convener of the neutrino interactions joint working group with the IceCube neutrino experiment (you may recognize it as the experiment that gave the Physics Nobel prize in 2026). I have also taught python courses at Université Paris Cité.
