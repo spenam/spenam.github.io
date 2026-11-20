@@ -2,7 +2,7 @@
 layout: page
 title: OpenMobility – Urban Mobility Intelligence and Traffic Forecasting
 description: A Python-based urban mobility analytics project combining open traffic data, geospatial processing, machine learning, and anomaly detection to understand and forecast traffic patterns across Paris
-img: assets/img/7.jpg
+img: assets/img/road_analysis.png
 importance: 6
 category: fun
 related_publications: false
