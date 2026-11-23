@@ -42,12 +42,12 @@ The project is developed in Python and follows a modular architecture that separ
 
 The workflow is organized into four development phases:
 
-| Phase | Objective | Status |
-|---|---|---|
-| Phase 1 | Data engineering and exploratory analysis | Completed |
+| Phase   | Objective                                  | Status    |
+| ------- | ------------------------------------------ | --------- |
+| Phase 1 | Data engineering and exploratory analysis  | Completed |
 | Phase 2 | Predictive analytics and anomaly detection | Completed |
-| Phase 3 | Road-network intelligence | Planned |
-| Phase 4 | Mobility intelligence platform | Planned |
+| Phase 3 | Road-network intelligence                  | Planned   |
+| Phase 4 | Mobility intelligence platform             | Planned   |
 
 ### 1. Data ingestion and preprocessing
 
@@ -72,13 +72,13 @@ The resulting dataset provides a common representation for subsequent analysis.
 
 A simplified example of the normalized schema is:
 
-| Column | Description |
-|---|---|
-| `timestamp` | Observation timestamp |
-| `sensor_id` | Traffic sensor identifier |
-| `flow_vehicles_per_hour` | Hourly vehicle count |
-| `occupancy_pct` | Occupancy rate |
-| `traffic_state` | Traffic-state information, when available |
+| Column                   | Description                               |
+| ------------------------ | ----------------------------------------- |
+| `timestamp`              | Observation timestamp                     |
+| `sensor_id`              | Traffic sensor identifier                 |
+| `flow_vehicles_per_hour` | Hourly vehicle count                      |
+| `occupancy_pct`          | Occupancy rate                            |
+| `traffic_state`          | Traffic-state information, when available |
 
 ### 2. Data quality assessment and exploratory analysis
 
