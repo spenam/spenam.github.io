@@ -252,7 +252,7 @@ I have always found mathematical generative art particularly appealing. There is
 
 Tessera explores this idea through geometry. Polygons, symmetry operations, adjacency constraints, and projection methods become the building blocks of visual compositions.
 
-What I particularly enjoy about this kind of project is the connection between mathematical rigor and aesthetic freedom. The geometry imposes precise constraints, but the choice of constructions, scales, colors, and visual arrangements leaves considerable room for experimentation.
+What I really enjoy about this kind of project is the connection between mathematical rigor and aesthetic freedom. The geometry imposes precise constraints, but the choice of constructions, scales, colors, and visual arrangements leaves considerable room for experimentation.
 
 For me, Tessera is both a computational geometry project and a creative exploration of mathematical structures. It is an opportunity to turn abstract geometric ideas into tangible visual patterns—and to make those ideas accessible to others through a lightweight tool that can be explored directly in a web browser.
 
