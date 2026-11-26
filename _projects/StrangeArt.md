@@ -36,7 +36,6 @@ StrangeArt is both a programming project and a personal exploration of how mathe
 ![De Jong density animation with all four parameter values](dejong)
 [dejong]: assets/img/dejong-b-density.gif "De Jong density animation with all four parameter values"
 
-
 ## Key Features
 
 - **Multiple dynamical systems:** Generate artwork from six different strange attractors, including Hénon, Clifford, de Jong, Lorenz, Rössler, and Thomas.
@@ -65,10 +64,12 @@ Discrete systems evolve through repeated application of mathematical functions.
 
 A two-dimensional discrete map can be represented as:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 x*{n+1} &= f(x_n,y_n;\theta) \\
 y*{n+1} &= g(x_n,y_n;\theta)
-\end{aligned}$$
+\end{aligned}
+$$
 
 where:
 
@@ -87,10 +88,12 @@ The project implements three discrete systems.
 
 The Hénon map is a classical example of a nonlinear discrete dynamical system:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 x*{n+1} &= 1-a x_n^2+y_n \\
 y*{n+1} &= b x_n
-\end{aligned}$$
+\end{aligned}
+$$
 
 Its behavior depends on the parameters $a$ and $b$. For suitable configurations, the system produces a characteristic strange attractor.
 
@@ -98,10 +101,12 @@ Its behavior depends on the parameters $a$ and $b$. For suitable configurations,
 
 The Clifford map is implemented using trigonometric transformations:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 x*{n+1} &= \sin(a y_n)+c\cos(a x_n) \\
 y*{n+1} &= \sin(b x_n)+d\cos(b y_n)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Changing the four parameters can produce a wide variety of intricate structures.
 
@@ -109,10 +114,12 @@ Changing the four parameters can produce a wide variety of intricate structures.
 
 The de Jong map uses another nonlinear trigonometric transformation:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 x*{n+1} &= \sin(a y_n)-\cos(b x_n) \\
 y*{n+1} &= \sin(c x_n)-\cos(d y_n)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Its parameter space offers particularly interesting opportunities for artistic exploration, as small changes can produce significantly different visual patterns.
 
@@ -139,11 +146,13 @@ Three continuous systems are currently implemented.
 
 The Lorenz equations are:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{dx}{dt} &= \sigma(y-x) \\
 \frac{dy}{dt} &= x(\rho-z)-y \\
 \frac{dz}{dt} &= xy-\beta z
-\end{aligned}$$
+\end{aligned}
+$$
 
 The system is a well-known example of deterministic chaos and produces the iconic butterfly-shaped Lorenz attractor for suitable parameter configurations.
 
@@ -151,11 +160,13 @@ The system is a well-known example of deterministic chaos and produces the iconi
 
 The Rössler equations are:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{dx}{dt} &= -y-z \\
 \frac{dy}{dt} &= x+ay \\
 \frac{dz}{dt} &= b+z(x-c)
-\end{aligned}$$
+\end{aligned}
+$$
 
 This system produces characteristic spiral trajectories and increasingly complex behavior depending on its parameters.
 
@@ -163,11 +174,13 @@ This system produces characteristic spiral trajectories and increasingly complex
 
 The Thomas system is defined by:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{dx}{dt} &= \sin(y)-bx \\
 \frac{dy}{dt} &= \sin(z)-by \\
 \frac{dz}{dt} &= \sin(x)-bz
-\end{aligned}$$
+\end{aligned}
+$$
 
 Its cyclic structure and nonlinear interactions make it particularly interesting from both a mathematical and visual perspective.
 
@@ -219,12 +232,12 @@ The project also supports parameter sweeps for:
 
 | System   | Swept parameter | Default range |
 | -------- | --------------- | ------------- |
-| Clifford | $a$           | -1.6 to -1.2  |
-| De Jong  | $a$           | -2.6 to -1.9  |
-| Hénon    | $a$           | 0.8 to 1.4    |
-| Lorenz   | $\rho$        | 20 to 28      |
-| Rössler  | $c$           | 2 to 6        |
-| Thomas   | $b$           | 0.32 to 0.18  |
+| Clifford | $a$             | -1.6 to -1.2  |
+| De Jong  | $a$             | -2.6 to -1.9  |
+| Hénon    | $a$             | 0.8 to 1.4    |
+| Lorenz   | $\rho$          | 20 to 28      |
+| Rössler  | $c$             | 2 to 6        |
+| Thomas   | $b$             | 0.32 to 0.18  |
 
 These ranges provide convenient starting points for experimentation rather than restricting the systems to a particular mathematical regime.
 
