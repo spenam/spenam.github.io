@@ -3,8 +3,7 @@
 
   const ROOT = "https://raw.githubusercontent.com/spenam/Tessera/main/tessera";
   const PYODIDE_VERSION = "0.27.7";
-  const PYODIDE_CDN =
-    `https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/`;
+  const PYODIDE_CDN = `https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/`;
 
   const SOURCES = [
     "__init__.py",
@@ -16,7 +15,7 @@
     "tilings/__init__.py",
     "tilings/periodic.py",
     "tilings/aperiodic.py",
-    "tilings/uniform.py"
+    "tilings/uniform.py",
   ];
 
   const $ = (id) => document.getElementById(id);
@@ -64,7 +63,7 @@
       stroke: $("tessera-stroke").value,
       stroke_width: Number($("tessera-stroke-width").value),
       fill: "palette",
-      opacity: 1
+      opacity: 1,
     };
 
     if (generator === "polygon") {
@@ -90,7 +89,7 @@
       background: $("tessera-background").value,
       palette: $("tessera-palette").value,
       seed: 12,
-      layers: [layer]
+      layers: [layer],
     };
   }
 
@@ -98,10 +97,7 @@
     setOutput("tessera-size", $("tessera-size").value);
     setOutput("tessera-rotation", `${$("tessera-rotation").value}°`);
     setOutput("tessera-scale", Number($("tessera-scale").value).toFixed(2));
-    setOutput(
-      "tessera-stroke-width",
-      Number($("tessera-stroke-width").value).toFixed(1)
-    );
+    setOutput("tessera-stroke-width", Number($("tessera-stroke-width").value).toFixed(1));
     setOutput("tessera-sides", $("tessera-sides").value);
     setOutput("tessera-extent", $("tessera-extent").value);
     setOutput("tessera-repeat", $("tessera-repeat").value);
@@ -114,9 +110,7 @@
       const script = document.createElement("script");
       script.src = url;
       script.onload = resolve;
-      script.onerror = () => reject(
-        new Error("Could not load the Pyodide runtime.")
-      );
+      script.onerror = () => reject(new Error("Could not load the Pyodide runtime."));
       document.head.appendChild(script);
     });
   }
@@ -130,9 +124,7 @@
       const response = await fetch(`${ROOT}/${path}`);
 
       if (!response.ok) {
-        throw new Error(
-          `Could not load Tessera source file: ${path} (${response.status})`
-        );
+        throw new Error(`Could not load Tessera source file: ${path} (${response.status})`);
       }
 
       const source = await response.text();
@@ -207,7 +199,7 @@ _svg
       "tessera-sides",
       "tessera-extent",
       "tessera-notation",
-      "tessera-repeat"
+      "tessera-repeat",
     ];
 
     ids.forEach((id) => {
@@ -231,7 +223,7 @@ _svg
       await loadScript(`${PYODIDE_CDN}pyodide.js`);
 
       pyodide = await window.loadPyodide({
-        indexURL: PYODIDE_CDN
+        indexURL: PYODIDE_CDN,
       });
 
       setStatus("Loading Tessera…");
@@ -245,10 +237,7 @@ _svg
     } catch (exception) {
       console.error("Tessera initialisation failed:", exception);
       setStatus("Initialisation failed");
-      showError(
-        exception.message ||
-        "Something went wrong while loading the Tessera engine."
-      );
+      showError(exception.message || "Something went wrong while loading the Tessera engine.");
     }
   }
 

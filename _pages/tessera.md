@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: Tessera
@@ -26,6 +25,7 @@ to see how the geometry and appearance of each tiling respond.
         Loading the Tessera engine…
       </div>
     </div>
+
   </div>
 
   <div class="tessera-controls">
@@ -126,6 +126,7 @@ to see how the geometry and appearance of each tiling respond.
       <input id="tessera-repeat" type="range"
              min="0" max="12" step="1" value="5">
     </div>
+
   </div>
 
   <p id="tessera-error" class="tessera-error" role="alert"></p>
