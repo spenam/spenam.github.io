@@ -1,14 +1,12 @@
 ---
 layout: page
-title: Tessera – Mathematical Generative Art and Geometric Tessellations
+title: Tessera – Geometric Tessellations
 description: A lightweight Python project for exploring periodic, aperiodic, and k-uniform tilings made from regular polygons, with an emphasis on mathematical structure and generative visual design.
 img: assets/img/weird.svg
 importance: 8
 category: fun
 related_publications: false
 ---
-
-# Tessera – Mathematical Generative Art and Geometric Tessellations
 
 ## Overview
 
