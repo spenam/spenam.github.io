@@ -59,7 +59,7 @@ These simple structures provide a foundation for exploring more elaborate arrang
 
 One of the central features of Tessera is its support for **k-uniform tilings**.
 
-A k-uniform tiling has exactly *k* symmetry orbits of vertices. In other words, its vertices fall into exactly *k* distinct classes under the symmetries of the tiling.
+A k-uniform tiling has exactly _k_ symmetry orbits of vertices. In other words, its vertices fall into exactly _k_ distinct classes under the symmetries of the tiling.
 
 A vertex figure describes the sequence of polygons meeting around a vertex. Importantly, different vertex orbits do not necessarily correspond to different vertex figures, making the classification of these tilings more subtle than simply counting local polygon arrangements.
 
@@ -68,11 +68,11 @@ Tessera includes a reference catalogue of selected constructions for k = 1 throu
 The current local catalogue contains:
 
 | Uniformity | Included constructions | Known complete total |
-|---|---:|---:|
-| 1-uniform | 11 | 11 |
-| 2-uniform | 4 | 20 |
-| 3-uniform | 3 | 61 |
-| 4-uniform | 1 | 151 |
+| ---------- | ---------------------: | -------------------: |
+| 1-uniform  |                     11 |                   11 |
+| 2-uniform  |                      4 |                   20 |
+| 3-uniform  |                      3 |                   61 |
+| 4-uniform  |                      1 |                  151 |
 
 The catalogue is deliberately a starter collection rather than an exhaustive classification. Tessera can generate additional patterns from valid construction notation, but it does not automatically discover every possible tiling or certify the k-uniformity of arbitrary user-supplied constructions.
 
@@ -243,7 +243,7 @@ python -m unittest discover -s tests -v
 
 The implementation of the k-uniform tiling generator draws on the following work:
 
-- V. Gomez-Jauregui, H. Hogg, C. Manchado and C. Otero, *GomJau-Hogg's Notation for Automatic Generation of k-Uniform Tessellations with ANTWERP v3.0*, Symmetry 13(12), 2376 (2021).
+- V. Gomez-Jauregui, H. Hogg, C. Manchado and C. Otero, _GomJau-Hogg's Notation for Automatic Generation of k-Uniform Tessellations with ANTWERP v3.0_, Symmetry 13(12), 2376 (2021).
 - [ANTWERP source project](https://github.com/HHogg/antwerp) – algorithmic reference for polygon placement and symmetry-expansion notation.
 - [The Tiling Atlas](https://www.thetilingatlas.com/catalogue) – reference catalogue of regular-polygon k-uniform tilings.
 - [OEIS A068599](https://oeis.org/A068599) – related sequence of k-uniform tiling counts.

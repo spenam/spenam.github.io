@@ -65,8 +65,8 @@ A two-dimensional discrete map can be represented as:
 
 \[
 \begin{aligned}
-x_{n+1} &= f(x_n,y_n;\theta) \\
-y_{n+1} &= g(x_n,y_n;\theta)
+x*{n+1} &= f(x_n,y_n;\theta) \\
+y*{n+1} &= g(x_n,y_n;\theta)
 \end{aligned}
 \]
 
@@ -89,8 +89,8 @@ The Hénon map is a classical example of a nonlinear discrete dynamical system:
 
 \[
 \begin{aligned}
-x_{n+1} &= 1-a x_n^2+y_n \\
-y_{n+1} &= b x_n
+x*{n+1} &= 1-a x_n^2+y_n \\
+y*{n+1} &= b x_n
 \end{aligned}
 \]
 
@@ -102,8 +102,8 @@ The Clifford map is implemented using trigonometric transformations:
 
 \[
 \begin{aligned}
-x_{n+1} &= \sin(a y_n)+c\cos(a x_n) \\
-y_{n+1} &= \sin(b x_n)+d\cos(b y_n)
+x*{n+1} &= \sin(a y_n)+c\cos(a x_n) \\
+y*{n+1} &= \sin(b x_n)+d\cos(b y_n)
 \end{aligned}
 \]
 
@@ -115,8 +115,8 @@ The de Jong map uses another nonlinear trigonometric transformation:
 
 \[
 \begin{aligned}
-x_{n+1} &= \sin(a y_n)-\cos(b x_n) \\
-y_{n+1} &= \sin(c x_n)-\cos(d y_n)
+x*{n+1} &= \sin(a y_n)-\cos(b x_n) \\
+y*{n+1} &= \sin(c x_n)-\cos(d y_n)
 \end{aligned}
 \]
 
@@ -231,14 +231,14 @@ Each generated trajectory corresponds to a different mathematical configuration.
 
 The project also supports parameter sweeps for:
 
-| System | Swept parameter | Default range |
-|---|---|---|
-| Clifford | \(a\) | -1.6 to -1.2 |
-| De Jong | \(a\) | -2.6 to -1.9 |
-| Hénon | \(a\) | 0.8 to 1.4 |
-| Lorenz | \(\rho\) | 20 to 28 |
-| Rössler | \(c\) | 2 to 6 |
-| Thomas | \(b\) | 0.32 to 0.18 |
+| System   | Swept parameter | Default range |
+| -------- | --------------- | ------------- |
+| Clifford | \(a\)           | -1.6 to -1.2  |
+| De Jong  | \(a\)           | -2.6 to -1.9  |
+| Hénon    | \(a\)           | 0.8 to 1.4    |
+| Lorenz   | \(\rho\)        | 20 to 28      |
+| Rössler  | \(c\)           | 2 to 6        |
+| Thomas   | \(b\)           | 0.32 to 0.18  |
 
 These ranges provide convenient starting points for experimentation rather than restricting the systems to a particular mathematical regime.
 
@@ -307,15 +307,15 @@ StrangeArt is implemented in Julia and follows a modular architecture designed t
 
 The project is organized into several main components:
 
-| Component | Responsibility |
-|---|---|
-| `src/attractors/` | Mathematical definitions and trajectory generation |
-| `src/rendering/` | SVG, PNG, and density-based rendering |
-| `src/animation/` | Parameter-sweep animation generation |
-| `src/StrangeArt.jl` | Main module and public API |
-| `bin/` | Command-line interface |
-| `scripts/` | Reusable batch-generation workflows |
-| `test/` | Automated tests |
+| Component           | Responsibility                                     |
+| ------------------- | -------------------------------------------------- |
+| `src/attractors/`   | Mathematical definitions and trajectory generation |
+| `src/rendering/`    | SVG, PNG, and density-based rendering              |
+| `src/animation/`    | Parameter-sweep animation generation               |
+| `src/StrangeArt.jl` | Main module and public API                         |
+| `bin/`              | Command-line interface                             |
+| `scripts/`          | Reusable batch-generation workflows                |
+| `test/`             | Automated tests                                    |
 
 The architecture separates the generation of mathematical trajectories from their visual representation.
 
